@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothDevicesActivity">
+    
+    <utils.AutoFitTextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraPreviewTextureView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bluetoothScanHistory" />
+        </ScrollView>
+        <GridLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:rowCount="1"
+            android:columnCount="2">
+            <Button
+                android:layout_columnWeight="1"
+                android:layout_column="0"
+                android:text="Start Scan"
+                android:id="@+id/bluetoothScanStartButton"/>
+            <Button
+                android:layout_columnWeight="1"
+                android:layout_column="1"
+                android:text="Stop Scan"
+                android:id="@+id/bluetoothScanStopButton"/>
+        </GridLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

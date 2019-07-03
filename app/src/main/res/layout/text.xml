@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Text"
+    android:orientation="vertical">
+
+  <!--  <Button
+        android:id="@+id/start_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="13dp"
+        android:text="开始说话" />
+    
+    <Button 
+        android:id="@+id/stop_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="说完了"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/saoyisao"
+        android:text="点击扫一扫"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描结果:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jieguo"
+        android:text="XX"/>-->
+
+
+</LinearLayout>

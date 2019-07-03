@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SensorPackage</string>
+    <string name="accelerometerX">Acceleration X:</string>
+    <string name="accelerometerY">Acceleration Y:</string>
+    <string name="accelerometerZ">Acceleration Z:</string>
+    <string name="gyroscopeX">Angular Speed Xaxis:</string>
+    <string name="gyroscopeY">Angular Speed Yaxis:</string>
+    <string name="gyroscopeZ">Angular Speed Zaxis:</string>
+    <string name="gravityX">Gravity Xaxis:</string>
+    <string name="gravityY">Gravity Yaxis:</string>
+    <string name="gravityZ">Gravity Zaxis:</string>
+    <string name="rotionalVectorX">Rotational Vector Xaxis:</string>
+    <string name="rotionalVectorY">Rotational Vector Yaxis:</string>
+    <string name="rotionalVectorZ">Rotational Vector Zaxis:</string>
+    <string name="magnetometerX">Magnetometer X:</string>
+    <string name="magnetometerY">Magnetometer Y:</string>
+    <string name="magnetometerZ">Magnetometer Z:</string>
+    <string name="linearAcceleratorX">Linear Accelerator X:</string>
+    <string name="linearAcceleratorY">Linear Accelerator Y:</string>
+    <string name="linearAcceleratorZ">Linear Accelerator Z:</string>
+    <string name="orientationX">Orientation X:</string>
+    <string name="orientationY">Orientation Y:</string>
+    <string name="orientationZ">Orientation Z:</string>
+    <string name="light">Light</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="startBtn">Start</string>
+    <string name="endBtn">End</string>
+    <string name="go2SecondActivityBtn">Go Next</string>
+    <string name="go2FirstActivityBtn">Go Previous</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>

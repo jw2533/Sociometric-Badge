@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".MainActivity">
+
+    <utils.AutoFitTextureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraPreviewTextureView"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AFFF">
+
+        <EditText
+            android:id="@+id/microphoneData"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Microphone"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/devicePosition" />
+
+        <EditText
+            android:id="@+id/devicePosition"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Device Position"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinglv" />
+
+        <EditText
+            android:id="@+id/pinglv"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Scan result"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roationalVectorYPlainText" />
+
+        <EditText
+            android:id="@+id/magnetometerZplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/accelerometerZ"
+            android:inputType="textPersonName"
+            android:text="@string/accelerometerZ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerYplainText" />
+
+        <EditText
+            android:id="@+id/roationalVectorZPlainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/rotionalVectorZ"
+            android:inputType="textPersonName"
+            android:text="@string/rotionalVectorZ"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roationalVectorYPlainText" />
+
+        <EditText
+            android:id="@+id/roationalVectorYPlainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/rotionalVectorY"
+            android:inputType="textPersonName"
+            android:text="@string/rotionalVectorY"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roationalVectorXPlainText2" />
+
+        <EditText
+            android:id="@+id/roationalVectorXPlainText2"
+            android:layout_width="150sp"
+            android:layout_height="31dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/rotionalVectorX"
+            android:inputType="textPersonName"
+            android:text="@string/rotionalVectorX"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationZPlainText" />
+
+        <EditText
+            android:id="@+id/orientationZPlainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gravityZ"
+            android:inputType="textPersonName"
+            android:text="@string/gravityZ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationYPlainText" />
+
+        <EditText
+            android:id="@+id/orientationYPlainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gravityY"
+            android:inputType="textPersonName"
+            android:text="@string/gravityY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationXPlainText" />
+
+        <EditText
+            android:id="@+id/orientationXPlainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gyroscopeX"
+            android:inputType="textPersonName"
+            android:text="@string/gravityX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorZplainText" />
+
+        <EditText
+            android:id="@+id/linearAcceleratorZplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gyroscopeZ"
+            android:inputType="textPersonName"
+            android:text="@string/gyroscopeZ"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorYplainText" />
+
+        <EditText
+            android:id="@+id/linearAcceleratorYplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gyroscopeY"
+            android:inputType="textPersonName"
+            android:text="@string/gyroscopeY"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorXplainText" />
+
+        <EditText
+            android:id="@+id/linearAcceleratorXplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/gyroscopeX"
+            android:inputType="textPersonName"
+            android:text="@string/gyroscopeX"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerZplainText" />
+
+        <EditText
+            android:id="@+id/magnetometerXplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/accelerometerX"
+            android:inputType="textPersonName"
+            android:text="@string/accelerometerX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/magnetometerYplainText"
+            android:layout_width="150sp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/accelerometerY"
+            android:inputType="textPersonName"
+            android:text="@string/accelerometerY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerXplainText" />
+
+        <TextView
+            android:id="@+id/microphoneDataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/devicePosition" />
+
+        <TextView
+            android:id="@+id/devicePositionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinglv" />
+
+        <TextView
+            android:id="@+id/orientationYTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationXTextView" />
+
+        <TextView
+            android:id="@+id/orientationXTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorZTextView" />
+
+        <TextView
+            android:id="@+id/rotationalVectorYTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rotationalVectorXTextView" />
+
+        <TextView
+            android:id="@+id/rotationalVectorZTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rotationalVectorYTextView" />
+
+        <TextView
+            android:id="@+id/rotationalVectorXTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationZTextView" />
+
+        <TextView
+            android:id="@+id/orientationZTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orientationYTextView" />
+
+        <TextView
+            android:id="@+id/linearAcceleratorZTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorYTextView" />
+
+        <TextView
+            android:id="@+id/linearAcceleratorYTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearAcceleratorXTextView" />
+
+        <TextView
+            android:id="@+id/linearAcceleratorXTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerZTextView" />
+
+        <TextView
+            android:id="@+id/magnetometerZTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerYTextView" />
+
+        <TextView
+            android:id="@+id/magnetometerYTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/magnetometerXTextView" />
+
+        <TextView
+            android:id="@+id/magnetometerXTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startDataBtn"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:onClick="startSensors"
+            android:text="@string/startBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:onClick="endSensors"
+            android:text="@string/endBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/go2SecondActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:onClick="go2SecondActivity"
+            android:text="@string/go2SecondActivityBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/saoyisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="48dp"
+            android:onClick="go2SecondActivity"
+            android:text="Scan begin"
+            app:layout_constraintBottom_toBottomOf="@+id/go2SecondActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="48dp"
+            android:onClick="go2SecondActivity"
+            android:text="Speaking begin"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="48dp"
+            android:onClick="go2SecondActivity"
+            android:text="Speaking end"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
